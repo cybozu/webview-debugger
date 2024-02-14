@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google" content="notranslate" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>WebView Debugger</title>
+  </head>
+  <body>
+    <div class="content">
+      <h2>History</h2>
+      <span id="history">0</span>
+      <button type="button" onclick="clickAdd()">Add</button>
+      <hr />
+      <h2>JS Dialog</h2>
+      <button type="button" onclick="clickShowAlert()">Alert</button>
+      <button type="button" onclick="clickShowConfirm()">Confirm</button>
+      <button type="button" onclick="clickShowPrompt()">Prompt</button>
+      <hr />
+      <h2>Custom Scheme</h2>
+      <button type="button" onclick="clickCustomScheme(this)">sms://</button>
+      <button type="button" onclick="clickCustomScheme(this)">tel://</button>
+      <button type="button" onclick="clickCustomScheme(this)">facetime://</button>
+      <button type="button" onclick="clickCustomScheme(this)">facetime-audio://</button>
+      <button type="button" onclick="clickCustomScheme(this)">imessage://</button>
+      <button type="button" onclick="clickCustomScheme(this)">mailto://</button>
+      <hr />
+      <h2>Permission</h2>
+      <label for="file-input">
+        Photo Library (Load)
+        <input id="file-input" type="file" accept="image/*" onchange="selectFile(arguments[0])" />
+      </label>
+      <img src="./sample.png" alt="sample" id="sample" />
+      <button type="button" onclick="clickSavePhotoLibrary()">Photo Library (Save)</button>
+      <button type="button" onclick="clickDeviceLocation()">Device Location</button>
+      <button type="button" onclick="clickCameraMicrophone()">Camera/Microphone</button>
+      <video playsinline controls></video>
+    </div>
+    <script type="text/javascript" src="script.js" defer></script>
+    <footer>
+      <p>©︎ Cybozu, Inc.</p>
+    </footer>
+  </body>
+</html>
