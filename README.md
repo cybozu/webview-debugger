@@ -1,0 +1,2 @@
+# webview-debugger
+WebViewの基本的な機能を検証するためのサンプルページ
