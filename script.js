@@ -22,6 +22,11 @@ const clickShowPrompt = () => {
   window.alert(`Result: ${result}`);
 };
 
+const clickCheckUserAgent = () => {
+  const userAgent = window.navigator.userAgent;
+  window.alert(userAgent);
+};
+
 const clickCustomScheme = (element) => {
   window.location = element.innerText;
 };
