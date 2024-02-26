@@ -27,6 +27,11 @@ const clickCheckUserAgent = () => {
   window.alert(userAgent);
 };
 
+const clickCheckCookies = () => {
+  const cookies = document.cookie;
+  window.alert(cookies);
+};
+
 const clickCustomScheme = (element) => {
   window.location = element.innerText;
 };
