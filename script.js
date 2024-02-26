@@ -28,7 +28,10 @@ const clickCheckUserAgent = () => {
 };
 
 const clickCheckCookies = () => {
-  const cookies = document.cookie;
+  const cookies = document.cookie
+    .split("; ")
+    .map((item) => item.replace("=", " = "))
+    .join("\n");
   window.alert(cookies);
 };
 
