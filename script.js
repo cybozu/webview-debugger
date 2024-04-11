@@ -119,6 +119,11 @@ const clickCameraMicrophone = () => {
 
 (() => {
   window.onload = () => {
+    const perfEntries = window.performance.getEntriesByType("navigation");
+    if (perfEntries[0].type === "reload") {
+      history.replaceState(null, "", "?history=0");
+      return;
+    }
     const params = new URLSearchParams(window.location.search);
     const queries = Object.fromEntries(params.entries());
     if ("history" in queries) {
