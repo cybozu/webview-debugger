@@ -67,14 +67,6 @@ input[type="file"] {
   display: none;
 }
 
-input[type="color"] {
-  position: absolute;
-  width: 0;
-  height: 0;
-  padding: 0;
-  border: none;
-  overflow: hidden;
-}
 
 img,
 video {
