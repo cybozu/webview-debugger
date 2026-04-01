@@ -63,7 +63,8 @@ label {
   }
 }
 
-input {
+input[type="file"],
+input[type="color"] {
   display: none;
 }
 
